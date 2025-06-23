@@ -3,6 +3,18 @@ let accountEmail = " example@gmail.com "
 var accountPassword = "12345"
 accountCity = "Varanasi"
 
-accountId = 2;
+let accountState;
+
+//accountId = 2;
 
 console.log(accountId);
+
+accountEmail = "hdfc@gmail.com"
+accountPassword = "2211122"
+accountCity = "begal"
+
+console.table([accountEmail, accountId, accountPassword, accountCity, accountState]);
+/*
+prefer not to use var 
+due to scope not defined
+*/ 
