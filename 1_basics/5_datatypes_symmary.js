@@ -34,7 +34,7 @@ let myObj= {// object
 // console.log(typeof bigNumber);
 // console.log(typeof score);
 // console.log(typeof myObj);
-// console.log(typeof myFunction);// returns function but iin actually its a function object
+// console.log(typeof myFunction);// returns function but iin reality its a function object
 // console.log(typeof heros); //= returns onject
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++

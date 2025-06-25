@@ -9,7 +9,7 @@ let isLoggedIn = false    //boolean
 
 //null => standalone value
 //undefined => value not assined
-//null is value is something that is not undefined like its empty
+//null is a value itself, is something that is not undefined  its empty
 // Symbols => unique , to define uniqueness
 
 //objects 
