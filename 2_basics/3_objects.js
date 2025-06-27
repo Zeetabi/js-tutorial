@@ -35,3 +35,4 @@ jsUser.greeting2 = function(){
 console.log(jsUser.greeting);//  refers to a [Function (anonymous)] 
 console.log(jsUser.greeting());// returns undefine
 console.log(jsUser.greeting2());// returns undefine
+ 
