@@ -33,3 +33,5 @@ const map = new Map()
   for (const key in map) {
    //console.log(key);// returns nothing no errror either as it is not iterable on map
   }
+
+  
