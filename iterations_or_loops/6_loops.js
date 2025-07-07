@@ -3,7 +3,8 @@ const coding = ['js', 'ruby', 'java', 'c++', 'python']
 
 const values = coding.forEach( (item) => {
     //console.log(item);// it will print as usual
-   // return item // if we use return to return the value but it still returns only undefine coz it doesnt retrun values
+   // return item 
+   // // if we use return to return the value but it still returns only undefine coz it doesnt retrun values
 })
 //console.log(values);//if we want to store this item value it would return 'undefined'
 // means foreach loop doesnt return any value
