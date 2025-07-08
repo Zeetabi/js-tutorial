@@ -15,7 +15,17 @@
     and [body] ==> [[div] => h1{[text node] and [attributes] }and p{[text node]} ] ] -->
     
     <div class="bg-black">
-        <h1 class="heading"id="title">DOM learning on Chai Aur Code with Hitesh Sir</h1>
+        <h1 class="heading"id="title">DOM learning on Chai Aur Code with Hitesh Sir<span style="display:none">test text</span>
+        </h1>
+        <h2>loggg</h2>
+        <h2>loggg</h2>
+        <h2>loggg</h2>
+        <input type="password">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">THREE</li>
+        </ul>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repellendus laborum laboriosam culpa hic consectetur alias ut illum deleniti nisi, quod animi minus voluptate reprehenderit quo? Ab recusandae sapiente temporibus?
         </p>
     </div>
@@ -48,6 +58,109 @@ title.style.padding = '15px'
 title.style.borderRadius = '5px'
 '5px'
 title.style.color = 'white'
-'white' -->
+'white' 
+title.textContent
+'DOM learning on Chai Aur Code with Hitesh Sir'
+title.innerText
+'DOM learning on Chai Aur Code with Hitesh Sir'
+title.innerHTML
+'DOM learning on Chai Aur Code with Hitesh Sir'-->
+<!-- DIFFERENCE BTW innerText, innerHTML AND textContent
+title.innerText
+'DOM learning on Chai Aur Code with Hitesh Sir'
+title.innerHTML
+'DOM learning on Chai Aur Code with Hitesh Sir\n            <span style="display:none">test text</span>\n        '
+title.textContent
+'DOM learning on Chai Aur Code with Hitesh Sir\n            test text\n        ' -->
+<!-- document.querySelector('h2')
+<h2>​loggg​</h2>​
+const myul = document.querySelector('ul')
+undefined
+myul.querySelectorAll('li')
+NodeList(3) [li, li, li]
+const myLi = myul.querySelector('li')
+undefined
+myLi.style.backgroundColor="green"
+'green' -->
+<!-- it is similiar to array but it is not array it is node list 
+const templi = document.querySelectorAll('li')
+undefined
+templi.style.color="red"
+VM1878:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:19
+(anonymous) @ VM1878:1
+[NEW] Explain Console errors by using Copilot in Edge: click
+         
+         to explain an error. 
+        Learn more
+        Don't show again
+templi[0].style.color="red"
+'red' -->
+
+<!-- html collection is different from node list and there ris no lopping method herer 
+ we cant use map or foreach hereso we can convert it to array use these methods 
+document.getElementsByClassName('list-item')
+HTMLCollection(3) [li.list-item, li.list-item, li.list-item]
+0
+: 
+li.list-item
+1
+: 
+li.list-item
+2
+: 
+li.list-item
+length
+: 
+3
+[[Prototype]]
+: 
+HTMLCollection
+item
+: 
+ƒ item()
+length
+: 
+(...)
+namedItem
+: 
+ƒ namedItem()
+constructor
+: 
+ƒ HTMLCollection()
+Symbol(Symbol.iterator)
+: 
+ƒ values()
+Symbol(Symbol.toStringTag)
+: 
+"HTMLCollection"
+get length
+: 
+ƒ length()
+[[Prototype]]
+: 
+Object 
+ 
+to convert it into array
+const mylist = document.getElementsByClassName('list-item')
+undefined
+Array.from(mylist)
+(3) [li.list-item, 
+li.list-item, 
+li.list-item]
+0: li.list-item
+1: li.list-item
+2: li.list-itemlength: 
+3[[Prototype]]: Array(0)
+
+now it is array
+we can perfomr array methods of looping
+const newarr = Array.from(mylist)
+undefined
+newarr.forEach(function (li){
+    li.style.color ="green"
+})
+undefined
+-->
 </body>
 </html>
