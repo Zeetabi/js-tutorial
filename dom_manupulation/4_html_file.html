@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai or code</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+// add list item  using function
+function addLanguage (langName){
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`
+    document.querySelector('.language').appendChild(li)
+
+}
+// addLanguage("python")
+// addLanguage("nodejs")
+// this is  not optimise approach as it traverse all nodes in the tree like what is we have 10 of 1000 of nodes
+
+function addOptiLanguage(langName){
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName));// this only append but where
+    document.querySelector('.language').appendChild(li)// here we directly put it in the list
+}
+addOptiLanguage("reactjs")
+addOptiLanguage("nextjs")
+
+// values to be edit
+const lastLang = document.querySelector("li:nth-child(2)");
+//lantLang.innerHTML = 'mojo'
+const newLi = document.createElement('li')//we can create a new element and replace it with previous one
+newLi.textContent = "mojo"//it in not attached to anything
+lastLang.replaceWith(newLi)
+
+// another edit 
+const secondLang = document.querySelector("li:first-child");
+secondLang.outerHTML = '<li>TYPESCRIPT</li>'
+
+// rermove method
+const lastlang = document.querySelector('li:last-child');
+lastlang.remove();
+// easy part
+</script>
+</html>
