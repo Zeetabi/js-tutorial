@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai or code</title>
+
+</head>
+<body>
+
+</body>
+<script>
+   const div = document.createElement('div');
+   console.log(div);
+   div.className ="main"
+   div.id = Math.round(Math.random() * 10 + 1 );
+   div.setAttribute("title", "generated TItile"); //this set attribute just write value no round trip to bring reference of value
+   div.style.backgroundColor = "green"
+   div.style.paddding = "12px"
+   //it is created in memory but not on the page we have to attach it to the page
+   //div.innerText = "chai or code"//this innerHTML bring the reference of value and over write it
+   const addtext = document.createTextNode("chai or code");
+   div.appendChild(addtext)
+
+   document.body.appendChild(div)
+
+</script>
+</html>
